@@ -1,0 +1,102 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuBar {
+  background-color: #57a3db;
+  height: 45px;
+}
+
+.menuBar ul {
+  list-style: none;
+  color: white;
+  float: right;
+}
+
+.menuBar ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menuBar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  padding: 2px 20px;
+  display: inline-block;
+  transition: background 0.6s;
+}
+
+.menuBar ul li a:hover {
+  color: #356283;
+}
+
+.welcomeContainer {
+  display: flex;
+  align-items: center;
+}
+
+#welcome {
+  margin-left: 250px;
+  width: 30%;
+  padding: 40px;
+  color: #356283;
+}
+
+#imgLogo {
+  margin-right: 250px;
+}
+
+.clinicContainer {
+  text-align: center;
+  color: #356283;
+  margin-top: 150px;
+}
+
+.clinicContainer img {
+  width: 400px;
+  margin: 30px;
+}
+
+.contactContainer {
+  color: #356283;
+  margin-top: 150px;
+}
+
+.contactContainer h3 {
+  text-align: center;
+}
+
+.contactLinks {
+  text-decoration: none;
+  margin-top: 30px;
+  display: flex;
+  width: 500px;
+}
+
+.contactLinks p {
+  color: #356283;
+  font-weight: bold;
+  margin: auto;
+}
+
+.localizationContainer {
+  text-align: center;
+  color: #356283;
+  margin-top: 150px;
+}
+
+.googleMaps {
+  display: flex;
+  align-items:center;
+  margin: 50px;
+}
+
+.googleMaps #address {
+  float: left;
+  width: 200px;
+}
