@@ -38,6 +38,11 @@
 .welcomeContainer {
   display: flex;
   align-items: center;
+  background-image: url('../assets/images/medico.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50px 50px;
+
 }
 
 #welcome {
@@ -47,18 +52,27 @@
   color: #356283;
 }
 
+
+
 #imgLogo {
   margin-right: 250px;
 }
 
 .clinicContainer {
   text-align: center;
-  color: #356283;
-  margin-top: 150px;
+  color: white;
+  padding: 20px;
+  margin-top: 70px;
+  background-color: #98b4cd;
+}
+
+.clinicContainer h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
 }
 
 .clinicContainer img {
-  width: 400px;
+  width: 600px;
   margin: 30px;
 }
 
@@ -67,8 +81,10 @@
   margin-top: 150px;
 }
 
-.contactContainer h3 {
+.contactContainer h2 {
   text-align: center;
+  margin-bottom: 50px;
+  font-size: 26px;
 }
 
 .contactLinks {
@@ -78,36 +94,63 @@
   width: 500px;
 }
 
-
 .contactLinks p {
-  color: #356283;
+  color: #3d7ead;
   font-weight: bold;
   margin: auto;
-  transition: background .6s;
-
+  transition: background 0.6s;
 }
 
 .contactLinks p:hover {
-  color:#57a3db;
+  color: #57a3db;
 }
 
+.contactPhone {
+  margin-top: 30px;
+  display: flex;
+  width: 500px;
+}
+
+.contactPhone p {
+  color: #3d7ead;
+  font-weight: bold;
+  margin: auto;
+}
 
 .localizationContainer {
   text-align: center;
-  color: #356283;
+  color: white;
   margin-top: 150px;
+  /* background-color: #658fb3; */
+  background-color: #658fb3;
+  padding: 20px;
+}
+
+.localizationContainer h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
 }
 
 .googleMaps {
   display: flex;
-  align-items:center;
-  margin: 50px;
+  align-items: center;
+  margin: 40px;
 }
 
 .googleMaps #address {
   float: left;
-  width: 200px;
+  width: 400px;
+  font-size: 22px;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 0;
 }
 
+.googleMaps #addressContainer hr{
+  margin-bottom: 50px;
+  height: 5px;
+  width: 600px;
+  background-color: white;
+}
 
 /* css responsivity to mobile */
