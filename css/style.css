@@ -78,11 +78,19 @@
   width: 500px;
 }
 
+
 .contactLinks p {
   color: #356283;
   font-weight: bold;
   margin: auto;
+  transition: background .6s;
+
 }
+
+.contactLinks p:hover {
+  color:#57a3db;
+}
+
 
 .localizationContainer {
   text-align: center;
@@ -100,3 +108,6 @@
   float: left;
   width: 200px;
 }
+
+
+/* css responsivity to mobile */
