@@ -226,4 +226,12 @@ header .menuBar ul li a:hover {
   background-color: #658fb3;
 }
 
+.socialContainer{
+  background-color: #356283;
+  padding: 20px; 
+  display: flex;
+  align-items: center;
+  width: 20vw;
+}
+
 /* css responsivity to mobile */
