@@ -5,6 +5,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header .menuBar h3{
+  color: white;
+  float: left;
+  padding: 10px;
+  margin-left: 50px;
+}
+
 header .menuBar {
   background-color: #57a3db;
   height: 45px;
@@ -37,30 +44,35 @@ header .menuBar ul li a:hover {
 }
 
 .welcomeContainer {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  /* align-items: flex-start; */
   width: 100%;
+  height: 90vh;
+  background-image: url('../assets/images/medico.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.welcomeContainer #welcome {
+/* .welcomeContainer #welcome {
   width: 50vw;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-/* 
-#welcome h1 {
-  position: absolute;
-  color: #356283;
-  text-align: center;
-  top: 320px;
-  left: 255px;
-  margin: auto;
-  height: auto;
-  width: 400px;
 } */
 
+.welcomeContainer h1 {
+  float: left;
+  color: #356283;
+  text-align: center;
+  margin-top: 350px;
+  margin-left: 200px;
+  width: 400px;
+  height: 50vh;
+}
+
 #imgLogo {
-  width: 25vw;
+  height: 60vh;
+  float: left;
+ 
 }
 
 .clinicContainer {
@@ -81,12 +93,14 @@ header .menuBar ul li a:hover {
   width: 50vw;
   max-width: 600px;
   margin: 30px;
+  border-radius: 10px;
 }
 
 .contactContainer {
   width: 100%;
   color: #356283;
   margin-top: 150px;
+  padding: 10px;
 }
 
 .contactContainer h2 {
@@ -230,24 +244,48 @@ header .menuBar ul li a:hover {
   display: flex;
   align-items: center;
   width: 20vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* css responsivity to mobile */
+/* colocar menu centralizado */
 @media (max-width: 1218px) {
   .welcomeContainer {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100%; */
+    background-size: 100vw;
+    
   }
-
+/* 
   .welcomeContainer img {
     order: -1;
-    /* width: auto; */
+    width: auto;
     margin: auto;
+  } */
+  .welcomeContainer h1 {
+    width: 50vw;
+    font-size: 22px;
+    text-align: center;
   }
-  .welcomeContainer #welcome {
-    width: 100vw;
+
+  .contactContainer{
+    margin-left: 20px;
+    
+  }
+
+  .servicesStructure{
+    display: inline-block;
+  }
+
+  .googleMaps{
+    display: inline-block;
+  }
+
+  .googleMaps #addressContainer{
+    display: inline-block;
   }
 }
 
