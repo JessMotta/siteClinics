@@ -254,8 +254,8 @@ header .menuBar ul li a:hover {
   .welcomeContainer {
     /* display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%; */
+    align-items: center; */
+    width: 100%;
     background-size: 100vw;
     
   }
@@ -272,7 +272,8 @@ header .menuBar ul li a:hover {
   }
 
   .contactContainer{
-    margin-left: 20px;
+    display: inline-block;
+    align-items: center;
     
   }
 
