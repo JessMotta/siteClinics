@@ -42,12 +42,10 @@ header .menuBar ul li a:hover {
   width: 100%;
 }
 
-#welcome {
-  background-image: url("../assets/images/medico_2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.welcomeContainer #welcome {
   width: 50vw;
-  height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* 
 #welcome h1 {
@@ -62,7 +60,7 @@ header .menuBar ul li a:hover {
 } */
 
 #imgLogo {
-  width: 50vw;
+  width: 25vw;
 }
 
 .clinicContainer {
@@ -214,7 +212,7 @@ header .menuBar ul li a:hover {
 }
 
 .googleMaps #addressContainer h4 {
- width: 50vw;
+  width: 50vw;
 }
 
 .googleMaps #addressContainer hr {
@@ -226,4 +224,41 @@ header .menuBar ul li a:hover {
   background-color: #658fb3;
 }
 
+.socialContainer {
+  background-color: #356283;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 20vw;
+}
+
 /* css responsivity to mobile */
+@media (max-width: 1218px) {
+  .welcomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .welcomeContainer img {
+    order: -1;
+    /* width: auto; */
+    margin: auto;
+  }
+  .welcomeContainer #welcome {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 976px) {
+  header .menuBar {
+    display: none;
+  }
+
+  /* .welcomeContainer #welcome {
+    width: 100vw;
+    height: auto;
+  } */
+
+}
